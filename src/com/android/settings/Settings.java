@@ -384,26 +384,6 @@ public class Settings extends PreferenceActivity
             if (id == R.id.dock_settings) {
                 if (!needsDockSettings())
                     target.remove(header);
-            } else if (id == R.id.operator_settings || id == R.id.manufacturer_settings ||
-                    id == R.id.advanced_settings) {
-                Utils.updateHeaderToSpecificActivityFromMetaDataOrRemove(this, target, header);
-            } else if (id == R.id.launcher_settings) {
-                Intent launcherIntent = new Intent(Intent.ACTION_MAIN);
-                launcherIntent.addCategory(Intent.CATEGORY_HOME);
-                launcherIntent.addCategory(Intent.CATEGORY_DEFAULT);
-
-                Intent launcherPreferencesIntent = new Intent(Intent.ACTION_MAIN);
-                launcherPreferencesIntent.addCategory("com.cyanogenmod.category.LAUNCHER_PREFERENCES");
-
-                ActivityInfo defaultLauncher = getPackageManager().resolveActivity(launcherIntent, PackageManager.MATCH_DEFAULT_ONLY).activityInfo;
-                launcherPreferencesIntent.setPackage(defaultLauncher.packageName);
-                ResolveInfo launcherPreferences = getPackageManager().resolveActivity(launcherPreferencesIntent, 0);
-                if (launcherPreferences != null) {
-                    header.intent = new Intent().setClassName(launcherPreferences.activityInfo.packageName,
-                            launcherPreferences.activityInfo.name);
-                } else {
-                    target.remove(header);
-                }
             } else if (id == R.id.wifi_settings) {
                 // Remove WiFi Settings if WiFi service is not available.
                 if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_WIFI)) {
@@ -428,13 +408,6 @@ public class Settings extends PreferenceActivity
             } else if (id == R.id.account_settings) {
                 int headerIndex = i + 1;
                 i = insertAccountsHeaders(target, headerIndex);
-            } else if (id == R.id.user_settings) {
-                if (!mEnableUserManagement
-                        || !UserId.MU_ENABLED || UserId.myUserId() != 0
-                        || !getResources().getBoolean(R.bool.enable_user_management)
-                        || Utils.isMonkeyRunning()) {
-                    target.remove(header);
-                }
             }
             if (UserId.MU_ENABLED && UserId.myUserId() != 0
                     && !ArrayUtils.contains(SETTINGS_FOR_RESTRICTED, id)) {
