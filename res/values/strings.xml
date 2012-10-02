@@ -1748,7 +1748,7 @@
 
     <!-- System Updates #CM -->
     <!-- About device screen, list item title. Takes the user to the screen for seeing and installing system updates. -->
-    <string name="system_update_settings_list_item_title">System updates</string>
+    <string name="system_update_settings_list_item_title">AOSPxXx-ICS Changelog</string>
     <!-- About device screen, list item summary. Takes the user to the screen for seeing and installing system updates. -->
     <string name="system_update_settings_list_item_summary">""</string>
 
@@ -1806,7 +1806,7 @@
     <!-- About device screen, version of kernel. -->
     <string name="kernel_version">Kernel version</string>
     <!-- About device screen, version of modification of Android. -->
-    <string name="mod_version">CyanogenMod version</string>
+    <string name="mod_version">AOSPxXx-ICS version</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About device screen, build number. -->
     <string name="build_number">Build number</string>
@@ -4506,4 +4506,11 @@ found in the list of installed apps.</string>
     <string name="increasing_ring_interval_3seconds">3 seconds</string>
     <string name="increasing_ring_interval_5seconds">5 seconds</string>
     <string name="increasing_ring_interval_10seconds">10 seconds</string>
+<string name="abso_title">AOSPxXx</string>
+    <string name="absotools_title">Tools</string>
+    <string name="absoota_title">OTA</string>
+    <string name="absotether_title">Tether</string>
+    <string name="absotweak_title">CPU Performance</string>
+    <string name="notification_drawer_title_tablet">Tablet Mode drawer</string>
+    <string name="sensors_fj">Sensors</string>
 </resources>
