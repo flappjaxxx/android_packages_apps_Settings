@@ -4513,4 +4513,5 @@ found in the list of installed apps.</string>
     <string name="absotweak_title">CPU Performance</string>
     <string name="notification_drawer_title_tablet">Tablet Mode drawer</string>
     <string name="sensors_fj">Sensors</string>
+<string name="changelog_title">View changelog</string>
 </resources>
