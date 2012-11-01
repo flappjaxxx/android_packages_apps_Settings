@@ -58,12 +58,12 @@
     <header android:icon="@drawable/abso_tools_tools" android:title="@string/absotools_title">
         <intent android:targetPackage="com.flappjaxxx.fjtools" android:action="android.intent.action.MAIN" android:targetClass="com.flappjaxxx.fjtools.ToolsActivity" />
     </header>
-<!-- Performance
+<!-- Performance  -->
     <header
         android:id="@+id/performance_settings"
         android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
         android:icon="@drawable/abso_tools_tweak"
-        android:title="@string/absotweak_title" />  -->
+        android:title="@string/absotweak_title" />
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
