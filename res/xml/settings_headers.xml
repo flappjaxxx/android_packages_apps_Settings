@@ -64,6 +64,11 @@
         android:fragment="com.android.settings.cyanogenmod.PerformanceSettings"
         android:icon="@drawable/abso_tools_tweak"
         android:title="@string/absotweak_title" />
+<!-- Launcher -->
+    <header
+        android:id="@+id/launcher_settings"
+        android:title="@string/launcher_settings_title"
+        android:icon="@drawable/ic_settings_cmlauncher" />
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />
