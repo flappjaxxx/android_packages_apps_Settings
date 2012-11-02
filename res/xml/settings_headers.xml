@@ -65,10 +65,9 @@
         android:icon="@drawable/abso_tools_tweak"
         android:title="@string/absotweak_title" />
 <!-- Launcher -->
-    <header
-        android:id="@+id/launcher_settings"
-        android:title="@string/launcher_settings_title"
-        android:icon="@drawable/ic_settings_cmlauncher" />
+    <header android:icon="@drawable/ic_settings_cmlauncher" android:title="@string/launcher_settings">
+        <intent android:targetPackage="com.cyanogenmod.trebuchet" android:action="android.intent.action.MAIN" android:targetClass="com.cyanogenmod.trebuchet.preference.Preferences" />
+    </header>
 
     <!-- DEVICE -->
     <header android:title="@string/header_category_device" />

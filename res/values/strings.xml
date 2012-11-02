@@ -4949,4 +4949,5 @@
     <string name="absotweak_title">CPU Performance</string>
     <string name="notification_drawer_title_tablet">Tablet Mode drawer</string>
     <string name="sensors_fj">Sensors</string>
+    <string name="launcher_settings">Launcher Settings</string>
 </resources>
