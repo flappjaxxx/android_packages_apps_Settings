@@ -38,10 +38,15 @@
             android:key="accelerometer"
             android:title="@string/accelerometer_title"/>
 
-<PreferenceScreen
+        <PreferenceScreen
             android:key="status_bar"
             android:fragment="com.android.settings.cyanogenmod.StatusBar"
             android:title="@string/combined_status_bar_title" />
+    <!-- Lock screen -->
+        <PreferenceScreen
+        android:id="@+id/lock_screen_settings"
+        android:fragment="com.android.settings.cyanogenmod.LockscreenInterface"
+        android:title="@string/lock_screen_title"/>
 
         <PreferenceScreen
         android:id="@+id/advanced_settings"
