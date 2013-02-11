@@ -5153,4 +5153,11 @@
     <string name="cyanogenmod_waiver_body">Changing this setting may be against your state or government laws.\n\nIn selecting \'OK\' below, you acknowledge this warning and waive, indemnify and hold harmless CyanogenMod and its contributors from all legal liabilities.</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+<string name="abso_title">FJ-Mod</string>
+    <string name="absotools_title">Tools</string>
+    <string name="absoota_title">OTA</string>
+    <string name="absotether_title">Tether</string>
+    <string name="absotweak_title">CPU Performance</string>
+    <string name="notification_drawer_title_tablet">Tablet Mode drawer</string>
+    <string name="sensors_fj">Sensors</string>
 </resources>
