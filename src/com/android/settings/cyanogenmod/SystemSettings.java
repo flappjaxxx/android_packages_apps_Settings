@@ -71,9 +71,9 @@ public class SystemSettings extends SettingsPreferenceFragment {
                 ServiceManager.getService(Context.WINDOW_SERVICE));
         try {
             if (windowManager.hasNavigationBar()) {
-                removeKeys = true;
+                removeKeys = false;
             } else {
-                removeNavbar = true;
+                removeNavbar = false;
             }
         } catch (RemoteException e) {
             // Do nothing
