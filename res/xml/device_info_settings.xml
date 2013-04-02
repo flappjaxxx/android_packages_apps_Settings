@@ -49,6 +49,7 @@
                     android:targetClass="com.cyanogenmod.updater.UpdatesSettings" />
         </PreferenceScreen>
 
+
         <!-- Anonymous statistics - (CMStats)
         <PreferenceScreen
             android:key="cmstats"
