@@ -65,7 +65,7 @@ public class SystemSettings extends SettingsPreferenceFragment {
         // Only show the hardware keys config on a device that does not have a navbar
         // and the navigation bar config on phones that has a navigation bar
         boolean removeKeys = false;
-        boolean removeNavbar = false;
+        boolean removeNavbar = true;
 
         IWindowManager windowManager = IWindowManager.Stub.asInterface(
                 ServiceManager.getService(Context.WINDOW_SERVICE));
@@ -73,7 +73,7 @@ public class SystemSettings extends SettingsPreferenceFragment {
             if (windowManager.hasNavigationBar()) {
                 removeKeys = false;
             } else {
-                removeNavbar = false;
+                removeNavbar = true;
             }
         } catch (RemoteException e) {
             // Do nothing
