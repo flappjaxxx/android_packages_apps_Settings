@@ -5171,6 +5171,4 @@
     <string name="absotweak_title">CPU Performance</string>
     <string name="notification_drawer_title_tablet">Tablet Mode drawer</string>
     <string name="sensors_fj">Sensors</string>
-=======
->>>>>>> upstream/cm-10.1
-</resources>
+    </resources>
