@@ -65,9 +65,6 @@
     <header android:icon="@drawable/abso_tools_tools" android:title="@string/absotools_title">
         <intent android:targetPackage="com.flappjaxxx.fjtools" android:action="android.intent.action.MAIN" android:targetClass="com.flappjaxxx.fjtools.ToolsActivity" />
     </header>
-    <header android:icon="@drawable/abso_oppo" android:title="@string/oppotools_title">
-        <intent android:targetPackage="org.omnirom.omnigears.device" android:action="android.intent.action.MAIN" android:targetClass="org.omnirom.omnigears.device.DeviceSettings" />
-    </header>
 
     <!-- CARBON -->
     <header android:title="@string/header_category_carbon" />
